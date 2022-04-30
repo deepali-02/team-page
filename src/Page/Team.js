@@ -1,4 +1,5 @@
 import "./style.css";
+import { team } from "../Data/team";
 export const Team = () => {
   return (
     <div>
@@ -6,11 +7,11 @@ export const Team = () => {
         <svg
           height="150"
           stroke="#000"
-          stroke-width="2"
-          class="text-line"
+          strokeWidth="2"
+          className="text-line"
           width="100%"
         >
-          <text  x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">
+          <text x="50%" dominantBaseline="middle" textAnchor="middle" y="50%">
             Meet our team
           </text>
         </svg>
