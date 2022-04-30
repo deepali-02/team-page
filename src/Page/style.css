@@ -95,12 +95,20 @@
   transition: transform 500ms ease;
 }
 
-.card:hover{
-    transform:scale(1.05);
+.card:hover {
+  transform: scale(1.05);
 }
+
 .card-content {
   --padding: 1rem;
   padding: var(--padding);
+  transform: translateY(52%);
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+  transition: transform 500ms ease;
+  transition-delay: 500ms;
 }
 
 .card-title {
@@ -116,8 +124,14 @@
   left: calc(var(--padding) * -1);
   bottom: 0;
   background: rgb(93, 212, 93);
+  transform: scaleX(0);
+  transition: transform 500ms ease;
+  transform-origin: left;
 }
 
+.card:hover .card-title::after {
+  transform: scaleX(1);
+}
 
 img {
   width: 100%;
