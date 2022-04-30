@@ -8,11 +8,15 @@
   );
 } */
 
+* {
+  box-sizing: border-box;
+}
+
 .title-container {
   background: #f8f8f8;
   display: flex;
   align-items: center;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .text-line {
@@ -54,4 +58,39 @@
   100% {
     fill: rgb(78, 195, 241);
   }
+}
+
+
+.body-container {
+  justify-items: center;
+  display: flex;
+  padding: 50px 75px 95px 100px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 15px 20px;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
