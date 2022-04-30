@@ -16,7 +16,20 @@ export const Team = () => {
           </text>
         </svg>
       </div>
-      <div className="body-container"></div>
+      <div className="body-container">
+      <div className="row">
+          {team.map((t) => (
+            <>
+              <div className="column">
+                <div className="card">
+                  <h2 className="card-title">{t.name}</h2>
+                  <p>{t.role}</p>
+                </div>
+              </div>
+            </>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
