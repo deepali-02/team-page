@@ -17,16 +17,20 @@ export const Team = () => {
         </svg>
       </div>
       <div className="body-container">
-      <div className="row">
+        <div className="row">
           {team.map((t) => (
             <>
               <div className="column">
                 <div className="card">
-                   
-                        <img src={t.image} alt="Avatar"/>
-                    
-                  <h2 className="card-title">{t.name}</h2>
-                  <p>{t.role}</p>
+                  <img src={t.image} alt="Avatar" />
+
+                  <h1 className="card-title">{t.name}</h1>
+                  <h3>{t.role}</h3>
+                  <p>
+                    {t.tags.map((tag) => (
+                      <span>#{tag} </span>
+                    ))}
+                  </p>
                 </div>
               </div>
             </>
