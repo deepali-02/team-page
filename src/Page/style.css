@@ -88,10 +88,30 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 5px;
   text-align: left;
-  background-color: rgb(143, 142, 142);
+  background-color: rgb(31, 29, 29);
   color: #f8f8f8;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.card-content {
+  --padding: 1rem;
+  padding: var(--padding);
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+}
+
+.card-title::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: calc(100% + var(--padding));
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  background: rgb(93, 212, 93);
 }
 
 img {
@@ -99,5 +119,3 @@ img {
   border-radius: 1rem;
   display: flex;
 }
-
-
