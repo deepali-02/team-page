@@ -22,6 +22,9 @@ export const Team = () => {
             <>
               <div className="column">
                 <div className="card">
+                   
+                        <img src={t.image} alt="Avatar"/>
+                    
                   <h2 className="card-title">{t.name}</h2>
                   <p>{t.role}</p>
                 </div>
