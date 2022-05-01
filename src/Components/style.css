@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+
+  
+
+
+  .showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    border-radius:20px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    margin-left: 36%;
+    justify-content:space-evenly
+
+  }
+  
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+  
+  .showcase li button {
+    margin-left: 10px;
+    font-size: 20px;
+    border:none;
+    background-color: transparent;
+  }
+
+
+
+  
+ 
