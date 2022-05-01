@@ -1,5 +1,7 @@
 import "./style.css";
 import { team } from "../Data/team";
+import { SearchByCity } from "../Components/SearchByCity";
+
 export const Team = () => {
   return (
     <div>
@@ -15,6 +17,9 @@ export const Team = () => {
             Meet our team
           </text>
         </svg>
+      </div>
+      <div>
+        <SearchByCity />
       </div>
       <div className="body-container">
         <div className="row">
