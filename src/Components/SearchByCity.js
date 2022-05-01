@@ -1,20 +1,27 @@
-export const SearchByCity = ()=>{
-    return(
-        <div className="container">
-        <div className="row">
-          <div className="column">
-            <h3>All</h3>
-          </div>
-          <div className="column">
-            <h3>Berline</h3>
-          </div>
-          <div className="column">
-            <h3>Amsterdam</h3>
-          </div>
-          <div className="column">
-            <h3>Cape town</h3>
-          </div>
-        </div>
-      </div>
-    )
-}
+import "./style.css";
+
+
+export const SearchByCity = () => {
+  return (
+    <div>
+      <ul className="showcase">
+        <li>
+         
+          <button>All</button>
+        </li>
+
+        <li>
+          <button>Berline</button>
+        </li>
+
+        <li>
+        
+          <button>Amsterdam</button>
+        </li>
+        <li>
+          <button>Cape town</button>
+        </li>
+      </ul>
+    </div>
+  );
+};
