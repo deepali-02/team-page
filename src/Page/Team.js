@@ -1,5 +1,5 @@
 import "./style.css";
-import { team } from "../Data/team";
+
 import { SearchByCity } from "../Components/SearchByCity";
 
 export const Team = () => {
@@ -20,28 +20,6 @@ export const Team = () => {
       </div>
       <div>
         <SearchByCity />
-      </div>
-      <div className="body-container">
-        <div className="row">
-          {team.map((t) => (
-            <>
-              <div className="column">
-                <div className="card">
-                  <img src={t.image} alt="Avatar" />
-                  <div className="card-content">
-                    <h1 className="card-title">{t.name}</h1>
-                    <h3>{t.role}</h3>
-                    <p>
-                      {t.tags.map((tag) => (
-                        <span>#{tag} </span>
-                      ))}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </>
-          ))}
-        </div>
       </div>
     </div>
   );
