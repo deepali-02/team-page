@@ -137,6 +137,35 @@ img {
   padding: 30px;
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      background: rgb(211, 38, 188);
+    }
+    .showcase {
+      width: 350px;
+      margin: 5% 4%;
+    }
+    button{
+        font-size: 9px;
+    }
+    .text-line{
+        font-size: 55px;
+        margin: 0%;
+    }
+  
+    .card-title{
+         font-size: 25px;
+    }
+    .card-content{
+        font-size: 13px;
+    }
+  
+  }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .wrapper {
