@@ -137,6 +137,32 @@ img {
   padding: 30px;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-template-rows:  repeat(50px); */
+      gap: 20px;
+      background: green;
+    }
+    .showcase {
+      width: 400px;
+      margin: 5% 20%;
+    }
+    button {
+      font-size: 12px;
+    }
+    .card-title{
+      font-size: 25px;
+  }
+  .card-content{
+     font-size: 13px;
+  }
+  .text-line{
+      font-size: 90px;
+  }
+  }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .wrapper {
