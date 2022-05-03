@@ -137,6 +137,19 @@ img {
   padding: 30px;
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      /* background-color: red; */
+    }
+    .showcase {
+      width: 450px;
+      margin: 5% 20%;
+    }
+  }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .wrapper {
