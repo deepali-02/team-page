@@ -4,38 +4,40 @@
 
 .showcase {
   background-color: rgb(221, 175, 89);
-  /* padding: 10px 20px; */
+  /* padding: 5px 5px; */
   border-radius: 20px;
   color: #777;
   list-style-type: none;
   display: flex;
   align-items: center;
-  width: 500px;
-  margin: 5% 35%;
-  justify-content:stretch;
+  width: 650px;
+  margin: 5% 30%;
+  justify-content: center;
 }
 
 .showcase li {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.showcase li {
-  /* margin-left: 10px; */
-  font-size: 18px;
+  justify-content: space-evenly;
   border: none;
-  /* background:rgb(235, 205, 151); */
-
   text-align: center;
 }
+
+/* .showcase li {
+  /* margin-left: 10px; */
+/* font-size: 18px; *
+  border: none;
+  /* background:rgb(235, 205, 151); *
+
+  text-align: center;
+} */
 
 button {
   padding: 10px 20px;
   border-radius: 20px;
-  width:fit-content;
+  width: fit-content;
   border: transparent;
-  background-color:rgb(221, 175, 89);
+  background-color: rgb(221, 175, 89);
   font-size: 18px;
 }
 
@@ -44,83 +46,93 @@ button:focus {
   background: orange;
 }
 
-.body-container {
-    justify-items: center;
-    display: flex;
-    padding: 50px 100px 100px 100px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {
+/* .body-container {
+  justify-items: center;
+  display: flex;
+  padding: 50px 100px 100px 100px;
+} */
+
+/* Remove extra left and right margins, due to padding */
+/* .row {
     margin: 0 -5px;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .column {
-    float: left;
-    width: 25%;
-    padding: 15px 20px;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 10px 5px;
-    text-align: left;
-    background-color: rgb(31, 29, 29);
-    color: #f8f8f8;
-    border-radius: 1rem;
-  
-    overflow: hidden;
-    transition: transform 500ms ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-content {
-    --padding: 1rem;
-    padding: var(--padding);
-    transform: translateY(52%);
-  }
-  
-  .card:hover .card-content {
+   */
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: fit-content;
+  padding: 15px 20px;
+} */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 5px;
+  text-align: left;
+  background-color: rgb(31, 29, 29);
+  color: #f8f8f8;
+  border-radius: 1rem;
+
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  --padding: 0.5px;
+  padding: var(--padding);
+  transform: translateY(53%);
+  transition: transform 500ms ease;
+}
+
+.card:hover .card-content {
     transform: translateY(0);
     transition: transform 500ms ease;
     transition-delay: 500ms;
   }
-  
-  .card-title {
-    position: relative;
-    width: max-content;
-  }
-  
-  .card-title::after {
-    content: " ";
-    position: absolute;
-    height: 4px;
-    width: calc(100% + var(--padding));
-    left: calc(var(--padding) * -1);
-    bottom: 0;
-    background: rgb(93, 212, 93);
-    transform: scaleX(0);
-    transition: transform 500ms ease;
-    transform-origin: left;
-  }
-  
-  .card:hover .card-title::after {
-    transform: scaleX(1);
-  }
-  
-  img {
-    width: 100%;
-    border-radius: 1rem;
-    display: flex;
-  }
-  
+
+.card-title {
+  position: relative;
+  width: max-content;
+}
+
+.card-title::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: calc(100% + var(--padding));
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  background: rgb(93, 212, 93);
+  transform: scaleX(0);
+  transition: transform 500ms ease;
+  transform-origin: left;
+}
+
+.card:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  max-width: 1300px;
+  grid-template-columns: repeat(5, 250px);
+  gap: 80px;
+  padding: 30px;
+}
