@@ -66,13 +66,15 @@ export const SearchByCity = () => {
             </div>
           </>
         ))): (
+        
           <div className="searchImg">
             <img  src={img1} alt="not found image"/>
             <h3>No result found</h3>
           </div>
-        )}
+          
+          )}
+          </div>
         
-      </div>
     </>
   );
 };
