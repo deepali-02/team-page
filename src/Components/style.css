@@ -149,7 +149,7 @@ img {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background: rgb(211, 38, 188);
+    /* background: rgb(211, 38, 188); */
   }
   .showcase {
     width: 350px;
@@ -177,7 +177,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows:  repeat(50px); */
     gap: 20px;
-    background: green;
+    /* background: green; */
   }
   .showcase {
     width: 400px;
@@ -231,7 +231,7 @@ img {
 @media only screen and (min-width: 1200px) {
   .wrapper {
     grid-template-columns: repeat(5, 1fr);
-    background-color: rgb(194, 206, 23);
+    /* background-color: rgb(194, 206, 23); */
     /* grid-template-rows: 100px 1fr; */
   }
 
