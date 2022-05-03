@@ -63,3 +63,13 @@
   }
 }
 
+.btn{
+    background-color: red;
+    color: white;
+    justify-content: flex-end;
+    position: absolute;
+    font-size: 20px;
+    top: 70px;
+    right: 45px;
+}
+
