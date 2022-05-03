@@ -18,6 +18,17 @@ body {
   line-height: 1.6;
 }
 
+
+.dark-mode  {
+  background-color:rgb(59, 53, 53);
+}
+
+.dark-mode .card{
+  background-color:whitesmoke;
+  color: black;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
