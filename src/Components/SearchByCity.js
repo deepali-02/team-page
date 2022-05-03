@@ -1,5 +1,6 @@
 import "./style.css";
-import img1 from "../img/search.gif"
+import img1 from "../img/search.gif";
+import img2 from "../img/addMember.png";
 import { team } from "../Data/team";
 import { useState } from "react";
 
@@ -50,31 +51,43 @@ export const SearchByCity = () => {
       </div>
 
       <div className="wrapper">
-        {teamByCity.length!==0 ? (teamByCity.map((t) => (
+        {teamByCity.length !== 0 ? (
           <>
+          {teamByCity.map((t) => (
+            
+              <div className="card">
+                <img src={t.image} alt="Avatar" />
+                <div className="card-content">
+                  <h1 className="card-title">{t.name}</h1>
+                  <h3>{t.role}</h3>
+                  <p>
+                    {t.tags.map((tag) => (
+                      <span>#{tag} </span>
+                    ))}
+                  </p>
+                </div>
+              </div>
+          )) }
             <div className="card">
-              <img src={t.image} alt="Avatar" />
+              <img src={img2} alt="avtar" />
               <div className="card-content">
-                <h1 className="card-title">{t.name}</h1>
-                <h3>{t.role}</h3>
+                <h1 className="card-title">Your Name</h1>
+                <h3>We are hiring</h3>
                 <p>
-                  {t.tags.map((tag) => (
-                    <span>#{tag} </span>
-                  ))}
+                  <span>#perspective #grow </span>
                 </p>
               </div>
             </div>
-          </>
-        ))): (
-        
+          
+            </>
+         
+        ) : (
           <div className="searchImg">
-            <img  src={img1} alt="not found image"/>
+            <img src={img1} alt="not found" />
             <h3>No result found</h3>
           </div>
-          
-          )}
-          </div>
-        
+        )}
+      </div>
     </>
   );
 };
