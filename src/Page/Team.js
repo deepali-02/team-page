@@ -5,6 +5,7 @@ import { SearchByCity } from "../Components/SearchByCity";
 export const Team = () => {
   return (
     <div>
+        <button className="btn">Change mode</button>
       <div className="title-container" id="grad1">
         <svg
           height="150"
