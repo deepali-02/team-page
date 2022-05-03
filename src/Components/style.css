@@ -89,15 +89,7 @@ button:focus {
 .card-content {
   --padding: 0.5px;
   padding: var(--padding);
-  transform: translateY(53%);
-  transition: transform 500ms ease;
 }
-
-.card:hover .card-content {
-    transform: translateY(0);
-    transition: transform 500ms ease;
-    transition-delay: 500ms;
-  }
 
 .card-title {
   position: relative;
@@ -112,7 +104,7 @@ button:focus {
   left: calc(var(--padding) * -1);
   bottom: 0;
   background: rgb(93, 212, 93);
-  transform: scaleX(0);
+
   transition: transform 500ms ease;
   transform-origin: left;
 }
@@ -137,105 +129,117 @@ img {
   padding: 30px;
 }
 
+@media (hover) {
+  .card-content {
+    transform: translateY(53%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-content {
+    transform: translateY(0);
+    transition: transform 500ms ease;
+    transition-delay: 500ms;
+  }
+  .card-title::after {
+    transform: scaleX(0);
+  }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      background: rgb(211, 38, 188);
-    }
-    .showcase {
-      width: 350px;
-      margin: 5% 4%;
-    }
-    button{
-        font-size: 9px;
-    }
-    .text-line{
-        font-size: 55px;
-        margin: 0%;
-    }
-  
-    .card-title{
-         font-size: 25px;
-    }
-    .card-content{
-        font-size: 13px;
-    }
-  
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: rgb(211, 38, 188);
   }
+  .showcase {
+    width: 350px;
+    margin: 5% 4%;
+  }
+  button {
+    font-size: 9px;
+  }
+  .text-line {
+    font-size: 55px;
+    margin: 0%;
+  }
+
+  .card-title {
+    font-size: 25px;
+  }
+  .card-content {
+    font-size: 13px;
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      /* grid-template-rows:  repeat(50px); */
-      gap: 20px;
-      background: green;
-    }
-    .showcase {
-      width: 400px;
-      margin: 5% 20%;
-    }
-    button {
-      font-size: 12px;
-    }
-    .card-title{
-      font-size: 25px;
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows:  repeat(50px); */
+    gap: 20px;
+    background: green;
   }
-  .card-content{
-     font-size: 13px;
+  .showcase {
+    width: 400px;
+    margin: 5% 20%;
   }
-  .text-line{
-      font-size: 90px;
+  button {
+    font-size: 12px;
   }
+  .card-title {
+    font-size: 25px;
   }
+  .card-content {
+    font-size: 13px;
+  }
+  .text-line {
+    font-size: 90px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .wrapper {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      /* background-color: red; */
-    }
-    .showcase {
-      width: 450px;
-      margin: 5% 20%;
-    }
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* background-color: red; */
   }
+  .showcase {
+    width: 450px;
+    margin: 5% 20%;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .wrapper {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
-      /* background-color: rgb(73, 42, 209); */
-      /* grid-template-rows: 100px 1fr; */
-    }
-  
-    .showcase {
-      width: 450px;
-      margin: 5% 25%;
-    }
-    .text-line{
-      font-size: 120px;
-  }
-  
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    /* background-color: rgb(73, 42, 209); */
+    /* grid-template-rows: 100px 1fr; */
   }
 
-@media only screen and (min-width: 1200px) {
-    .wrapper {
-      grid-template-columns: repeat(5, 1fr);
-      background-color: rgb(194, 206, 23);
-      /* grid-template-rows: 100px 1fr; */
-    }
-  
-    .showcase {
-      width: 650px;
-      margin: 5% 24%;
-    }
-    button{
-        font-size: 15px;
-    }
+  .showcase {
+    width: 450px;
+    margin: 5% 25%;
   }
+  .text-line {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(194, 206, 23);
+    /* grid-template-rows: 100px 1fr; */
+  }
+
+  .showcase {
+    width: 650px;
+    margin: 5% 24%;
+  }
+  button {
+    font-size: 15px;
+  }
+}
