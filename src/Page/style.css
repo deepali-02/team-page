@@ -16,14 +16,17 @@
   /* background: #f8f8f8; */
   display: flex;
   align-items: center;
+  /* padding-top: 5%; */
   /* height: 90vh; */
 }
 
 .text-line {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  animation: dash 5s linear forwards, filling 5s ease-in forwards;
-  font-size: 80px;
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+  animation: dash 8s linear forwards, filling 8s ease-in forwards;
+  font-size: 150px;
+  margin: 10%;
+  font-weight: 50px;
 }
 
 .text-line text {
