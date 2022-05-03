@@ -119,7 +119,14 @@ img {
   display: flex;
 }
 
-
+.searchImg{
+  width: max-content;
+  display: block;
+  margin: 5% 65%;
+  font-size: 40px;
+  font-family: fantasy;
+  color: red;
+}
 
 .wrapper {
   display: grid;
