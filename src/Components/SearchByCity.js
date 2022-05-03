@@ -1,4 +1,5 @@
 import "./style.css";
+import img1 from "../img/search.gif"
 import { team } from "../Data/team";
 import { useState } from "react";
 
@@ -49,7 +50,7 @@ export const SearchByCity = () => {
       </div>
 
       <div className="wrapper">
-        {teamByCity.map((t) => (
+        {teamByCity.length!==0 ? (teamByCity.map((t) => (
           <>
             <div className="card">
               <img src={t.image} alt="Avatar" />
@@ -64,7 +65,13 @@ export const SearchByCity = () => {
               </div>
             </div>
           </>
-        ))}
+        ))): (
+          <div className="searchImg">
+            <img  src={img1} alt="not found image"/>
+            <h3>No result found</h3>
+          </div>
+        )}
+        
       </div>
     </>
   );
