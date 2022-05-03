@@ -136,3 +136,19 @@ img {
   gap: 80px;
   padding: 30px;
 }
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+      grid-template-columns: repeat(5, 1fr);
+      background-color: rgb(194, 206, 23);
+      /* grid-template-rows: 100px 1fr; */
+    }
+  
+    .showcase {
+      width: 650px;
+      margin: 5% 24%;
+    }
+    button{
+        font-size: 15px;
+    }
+  }
