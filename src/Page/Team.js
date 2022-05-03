@@ -3,9 +3,15 @@ import "./style.css";
 import { SearchByCity } from "../Components/SearchByCity";
 
 export const Team = () => {
+
+const changeMode =()=>{
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+
   return (
     <div>
-        <button className="btn">Change mode</button>
+        <button className="btn" onClick={changeMode}>Change mode</button>
       <div className="title-container" id="grad1">
         <svg
           height="150"
